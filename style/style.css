@@ -1,8 +1,11 @@
 :root {
   --branding-color: #ec1723;
-  --title-color: #203132;
+  --title-color: #777777;
   --text-color: #7e7e7e;
   --heading-font-family: "Poppins", sans-serif;
+  --content-font-family: "Montserrat", sans-serif;
+  --content-font-size: 16px;
+  --background-color: #f1f2f2;
 }
 
 h1,
@@ -11,13 +14,28 @@ h3,
 h4,
 h5 {
   font-family: var(--heading-font-family);
-  color: var(--title-color);
 }
 
 h1 {
   font-weight: 700;
   font-size: 100px;
   line-height: 128px;
+}
+
+h2 {
+  font-size: 28px;
+  display: inline;
+  margin: 0 13px;
+  color: var(--title-color);
+}
+
+h3,
+h4,
+h5 {
+  color: rgb(0, 0, 0, 0.7);
+  font-size: 15px;
+  text-transform: uppercase;
+  margin-top: 20px;
 }
 
 @media (max-width: 700px) {
@@ -28,8 +46,9 @@ h1 {
 }
 
 p {
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
+  font-family: var(--content-font-family);
+  font-size: var(--content-font-size);
+  font-weight: 300;
 }
 
 .hero {
@@ -98,4 +117,41 @@ p {
 .btn-black:hover {
   background: var(--branding-color);
   color: #ffffff;
+}
+
+.highlight {
+  font-weight: 300;
+  font-size: 34px;
+  line-height: 50px;
+  color: #383838;
+}
+
+.icons {
+  color: var(--branding-color);
+  font-size: 28px;
+}
+
+.icons-title {
+  color: var(--branding-color);
+  font-size: 30px;
+}
+
+.card-body {
+  padding: 40px 50px;
+  border: none;
+}
+
+.grey-block {
+  background-color: var(--background-color);
+  padding: 90px;
+}
+
+@media only screen and (max-width: 576px) {
+  .grey-block {
+    padding: 30px 20px;
+  }
+  .highlight {
+    font-size: 25px;
+    line-height: 28px;
+  }
 }
