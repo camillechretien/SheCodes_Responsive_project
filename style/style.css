@@ -1,7 +1,101 @@
-//
-// font-family: 'Poppins', sans-serif;
+:root {
+  --branding-color: #ec1723;
+  --title-color: #203132;
+  --text-color: #7e7e7e;
+  --heading-font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--heading-font-family);
+  color: var(--title-color);
+}
 
 h1 {
-  font-family: "Playfair Display", serif;
   font-weight: 700;
+  font-size: 100px;
+  line-height: 128px;
+}
+
+@media (max-width: 700px) {
+  h1 {
+    line-height: 60px;
+    font-size: 50px;
+  }
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+
+.hero {
+  background-image: url(/images/macarrons.png);
+
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  padding: 225px 0px;
+  color: white;
+  text-align: center;
+}
+
+.hero h1 {
+  color: #ffffff;
+}
+
+.hero p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 31px;
+}
+
+.btn-transparent {
+  color: #ffffff;
+  border-width: 1px;
+  border-color: white;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 14px;
+  position: relative;
+  display: inline-block;
+  vertical-align: baseline;
+  background: transparent;
+  text-transform: uppercase;
+  transition: all 0.3s linear;
+  border-style: solid;
+}
+
+.btn-transparent:hover {
+  background: var(--branding-color);
+  color: #ffffff;
+}
+
+.btn-black {
+  color: #ffffff;
+  border-width: 1px;
+  border-color: rgb(0, 0, 0);
+  background: rgb(0, 0, 0, 0.7);
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 14px;
+  position: relative;
+  display: inline-block;
+  vertical-align: baseline;
+  text-transform: uppercase;
+  transition: all 0.3s linear;
+  border-style: solid;
+}
+
+.btn-black:hover {
+  background: var(--branding-color);
+  color: #ffffff;
 }
