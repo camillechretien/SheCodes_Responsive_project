@@ -78,10 +78,16 @@ p {
   color: #ffffff;
 }
 
-.about-section {
-  background-color: var(--background-color);
+.content {
   padding: 90px;
 }
+
+.more-to-come {
+  font-size: 50px;
+  text-transform: none;
+  margin: 40px 0px 0px 30px;
+}
+
 .btn-transparent {
   color: #ffffff;
   border-width: 1px;
@@ -161,6 +167,11 @@ p {
 }
 
 @media only screen and (max-width: 576px) {
+  h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
   .grey-block {
     padding: 30px 20px;
   }
@@ -169,7 +180,11 @@ p {
     line-height: 28px;
   }
 
-  .about-section {
+  .content {
     padding: 30px 20px;
+  }
+
+  .more-to-come {
+    font-size: 40px;
   }
 }
