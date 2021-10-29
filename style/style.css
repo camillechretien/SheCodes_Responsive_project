@@ -52,6 +52,40 @@ p {
   color: var(--text-color);
 }
 
+nav {
+  padding: 5px 0;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  font-family: var(--heading-font-family);
+  line-height: 42px;
+  margin-left: 15px;
+}
+
+nav ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  transition: all 100ms ease-in-out;
+}
+
+nav a:hover,
+nav li.active a {
+  color: var(--branding-color);
+}
+
+.logo-homepage {
+  max-width: 150px;
+}
+
 .hero {
   background-image: url(/images/macarrons.png);
 
@@ -170,6 +204,16 @@ p {
   h1 {
     font-size: 40px;
     line-height: 40px;
+  }
+
+  nav {
+    padding-right: 0px;
+    margin: 0px;
+    margin-top: 0px;
+  }
+
+  nav ul {
+    padding-top: 10px;
   }
 
   .grey-block {
