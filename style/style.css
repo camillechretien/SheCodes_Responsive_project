@@ -200,6 +200,48 @@ nav li.active a {
   height: 700px;
 }
 
+footer {
+  margin: 40px 0px;
+}
+footer .email-link {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+
+footer .email-link:hover {
+  color: var(--branding-color);
+}
+
+footer .social-links a {
+  margin: 0 20px;
+  color: var(--branding-color);
+  padding: 3px;
+  border-radius: 50%;
+  font-size: 24px;
+  transition: all 100ms ease-in-out;
+}
+
+footer .social-links a:hover {
+  color: var(--title-color);
+}
+
+footer h4 {
+  font-size: 35px;
+  color: var(--branding-color);
+  margin: 0px;
+}
+
+footer .contact-box {
+  background: #f1f2f2;
+  padding: 30px 50px;
+  border-radius: 10px;
+}
+
+footer .contact-box p {
+  margin: 0px;
+}
+
 @media only screen and (max-width: 576px) {
   h1 {
     font-size: 40px;
