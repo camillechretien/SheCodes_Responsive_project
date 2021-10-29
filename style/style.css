@@ -85,6 +85,9 @@ nav li.active a {
   max-width: 150px;
 }
 
+.copyright {
+  font-size: 12px;
+}
 .hero {
   background-image: url(/images/macarrons.png);
 
@@ -92,7 +95,7 @@ nav li.active a {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  padding: 225px 0px;
+  padding: 175px 0px;
   color: white;
   text-align: center;
 }
